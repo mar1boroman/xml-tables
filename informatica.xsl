@@ -17,28 +17,32 @@
          <p>Prettify your XML!</p> 
       </div>
 
-      <xsl:for-each select="POWERMART/REPOSITORY/FOLDER"> 
-                        
-         <xsl:value-of select = "@NAME"/> 
-                        
-      </xsl:for-each> 
       
+
       <div class="container">
          <div class="row">
             <div class="col-sm-4">
-               <h3>Column 1</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+               <h3>Folder name</h3>
+               
+               
+               
                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
             </div>
             <div class="col-sm-4">
-               <h3>Column 2</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-               <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+               <h3>Repository Name</h3>
+               <xsl:for-each select="POWERMART/REPOSITORY"> 
+                        
+                  <p><xsl:value-of select = "@NAME"/></p>
+                                 
+               </xsl:for-each> 
             </div>
             <div class="col-sm-4">
-               <h3>Column 3</h3>        
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-               <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+               <h3>Mapping Name</h3>        
+               <xsl:for-each select="POWERMART/REPOSITORY/FOLDER/MAPPING"> 
+                        
+                  <p><xsl:value-of select = "@NAME"/></p>
+                                 
+               </xsl:for-each> 
             </div>
          </div>
       </div>
