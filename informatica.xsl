@@ -4,7 +4,7 @@
    <html> 
          <body> 
             <h2>Informatica Pretty Print</h2> 
-               <xsl:for-each select="POWERMART/REPOSITORY"> 
+               <xsl:for-each select="POWERMART/REPOSITORY/FOLDER"> 
                   
                         <xsl:value-of select = "@NAME"/> 
                     
