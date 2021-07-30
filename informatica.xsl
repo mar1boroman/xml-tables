@@ -23,7 +23,7 @@
             <div class="row">
                <div class="col-sm-4">
                   <h3>Folder name</h3>
-                  <xsl:for-each select="POWERMART/REPOSITORY"> 
+                  <xsl:for-each select="POWERMART/REPOSITORY/FOLDER"> 
                            
                      <p><xsl:value-of select = "@NAME"/></p>
                                     
