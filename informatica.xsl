@@ -25,7 +25,7 @@
                      <th>Values</th>
                   </thead>
                   <tbody>
-                     <xsl:for-each select="/">
+                     <xsl:for-each select="*">
                         <tr>
                            <td>
                               <xsl:value-of select="name()"/>
