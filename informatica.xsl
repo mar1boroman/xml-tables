@@ -4,7 +4,7 @@
    <xsl:template match = "/">
       <html lang="en">
          <head>
-            <title>Bootstrap Example</title>
+            <title>PrettifyXML</title>
             <meta charset="utf-8"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
@@ -17,27 +17,11 @@
                <h1>XML Analysis</h1>
                <p>Prettify your XML!</p>
             </div>
+            
+            <br/>
 
-            <div class="table-responsive">
-               <table class="table">
-                  <thead>
-                     <th>Property</th>
-                     <th>Values</th>
-                  </thead>
-                  <tbody>
-                     <xsl:for-each select="*">
-                        <tr>
-                           <td>
-                              <xsl:value-of select="name()"/>
-                           </td>
-                           <td>
-                              <xsl:value-of select="title"/>
-                           </td>
-                        </tr>
-                     </xsl:for-each>
-                  </tbody>
-               </table>
-            </div>
+            <xsl:value-of select="*">
+            
 
 
 
