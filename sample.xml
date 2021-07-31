@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<?xml-stylesheet type = "text/xsl" href = "https://raw.githubusercontent.com/mar1boroman/mar1boroman.github.io/main/informatica.xsl"?> 
+<bookstore>
+
+<book>
+  <title lang="en">Harry Potter</title>
+  <price>29.99</price>
+</book>
+
+<book>
+  <title lang="en">Learning XML</title>
+  <price>39.95</price>
+</book>
+
+</bookstore>
