@@ -25,7 +25,7 @@
                      <th>Values</th>
                   </thead>
                   <tbody>
-                     <xsl:for-each select="/">
+                     <xsl:for-each select="POWERMART/*">
                         <tr>
                            <td>
                               NAME
