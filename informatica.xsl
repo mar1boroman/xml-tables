@@ -28,7 +28,7 @@
                      <xsl:for-each select="POWERMART/REPOSITORY/*">
                         <tr>
                            <td>
-                              NAME
+                              <xsl:value-of select="name()"/>
                            </td>
                            <td>
                               <xsl:value-of select="@NAME"/>
