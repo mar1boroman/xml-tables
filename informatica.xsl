@@ -31,7 +31,7 @@
                               <xsl:value-of select="name()"/>
                            </td>
                            <td>
-                              <xsl:value-of select="@NAME"/>
+                              <xsl:value-of select="title"/>
                            </td>
                         </tr>
                      </xsl:for-each>
