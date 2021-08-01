@@ -11,17 +11,80 @@
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-                <script src="https://raw.githubusercontent.com/mar1boroman/mar1boroman.github.io/main/exportCSV.js" crossorigin="anonymous"></script>
-                <script>
-                    $(document).ready(function () {
-                    $("#searchItem").on("keyup", function () {
-                        enableSearch($(this), "XMLTable");
-                    });
+                <script type="text/javascript">
+                    <xsl:text>
+                        <![CDATA[
 
-                    $("#exportBtn").click(function () {
-                        exportHTMLTableToCSV();
-                    });
-                    });
+                        function enableSearch(element, tableID = "XMLTable") {
+                        var value = $(element).val().toLowerCase();
+
+                        $("#" + tableID + " tbody tr").filter(function () {
+                            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                        });
+                        }
+
+                        function exportHTMLTableToCSV(tableID = "XMLTable", separator = ",") {
+                        //Select table records
+                        var records = document.querySelectorAll("table#" + tableID + " tr");
+
+                        // Build CSV String
+                        var csv = [];
+                        console.log(records);
+                        for (var i = 0; i< records.length; i++) {
+                            var record = [];
+                            var cols = records[i].querySelectorAll("td, th");
+
+                            for (var j = 0; j < cols.length; j++) {
+                            // Removing newlines and condensing multiple spaces to one
+                            var data = cols[j].innerText
+                                .replace(/(\r\n|\n|\r)/gm, "")
+                                .replace(/(\s\s)/gm, " ");
+
+                            // Escape double-quotes
+                            data = data.replace(/"/g, '""');
+
+                            // Double quoted escaped column value
+                            record.push('"' + data + '"');
+                            }
+
+                            csv.push(record.join(separator));
+                        }
+
+                        var csvBlob = csv.join("\n");
+                        var filename =
+                            document.baseURI
+                            .split(/(\\|\/)/g)
+                            .pop()
+                            .split(/(\.)/g)[0] + ".csv";
+
+                        downloadCSVFile(csvBlob, filename);
+                        }
+
+                        function downloadCSVFile(csvBlob, filename) {
+                        var downloadLink = document.createElement("a");
+                        downloadLink.style.display = "none";
+                        downloadLink.setAttribute("target", "_blank");
+                        downloadLink.setAttribute(
+                            "href",
+                            "data:text/csv;charset=utf-8," + encodeURIComponent(csvBlob)
+                        );
+                        downloadLink.setAttribute("download", filename);
+                        document.body.appendChild(downloadLink);
+                        downloadLink.click();
+                        document.body.removeChild(downloadLink);
+                        }
+
+                        $(document).ready(function () {
+                        $("#searchItem").on("keyup", function () {
+                            enableSearch($(this), "XMLTable");
+                        });
+
+                        $("#exportBtn").click(function () {
+                            exportHTMLTableToCSV();
+                        });
+                        });
+                        ]]>
+                    </xsl:text>
                 </script>
             </head>
 
