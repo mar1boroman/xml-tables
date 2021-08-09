@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>mar1boroman</title>
+    <title>Pricing example · Bootstrap v5.0</title>
 
     <!-- Bootstrap core CSS -->
     <link
@@ -12,43 +10,125 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link href="cover.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      body {
+        background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+      }
+
+      .container {
+        max-width: 960px;
+      }
+
+      .intro-main {
+        max-width: 700px;
+      }
+    </style>
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="mb-auto">
-        <div>
-          <h3 class="float-md-start mb-0">XML Table</h3>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contribute</a>
+
+  <body>
+    <div class="container py-3">
+      <header>
+        <div
+          class="
+            d-flex
+            flex-column flex-md-row
+            align-items-center
+            pb-3
+            mb-4
+            border-bottom
+          "
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center text-dark text-decoration-none"
+          >
+            <span class="fs-4">XML Table</span>
+          </a>
+
+          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <a class="me-3 py-2 text-dark text-decoration-none" href="#"
+              >Usage</a
+            >
+            <a class="me-3 py-2 text-dark text-decoration-none" href="#"
+              >Features</a
+            >
+            <a class="py-2 text-dark text-decoration-none" href="#">About</a>
           </nav>
+        </div>
+
+        <div class="intro-main p-3 pb-md-4 mx-auto text-center">
+          <h1 class="display-4 fw-normal">
+            Turn your XML file into a queryable data table - Instantly!
+          </h1>
+          <p class="fs-5 text-muted">
+            Quickly search through the data or save the XML file as CSV for data
+            processing.
+          </p>
         </div>
       </header>
 
-      <main class="px-3">
-        <h1>xml-table.xsl</h1>
-        <p class="lead">
-          XML Tables is an XSL Stylesheet with a spatter of Bootstrap & vanilla
-          JS which allows you to display XML in a table. The JS allows you to
-          filter the table & export the table in a CSV format.
-        </p>
-        <p class="text-muted">
-          It is very easy to use, requires only an Internet browser to work!
-        </p>
-        <p class="lead">
-          <a
-            href="#"
-            class="btn btn-lg btn-secondary fw-bold border-white bg-white"
-            >Learn more</a
-          >
-        </p>
-      </main>
+      <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col d-flex align-items-stretch">
+            <div class="card mb-4 rounded-3 shadow-sm border-success">
+              <div
+                class="card-header py-3 text-white bg-success border-success"
+              >
+                <h4 class="my-0 fw-normal">Instant Search</h4>
+              </div>
+              <div class="card-body">
+                Your transformed XML will feature a search box, which
+                dynamically filters the XML table
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-stretch">
+            <div class="card mb-4 rounded-3 shadow-sm border-info">
+              <div class="card-header py-3 text-white bg-info border-info">
+                <h4 class="my-0 fw-normal">Export as CSV</h4>
+              </div>
+              <div class="card-body">
+                Instantly export the datatable as double-quoted CSV file
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-stretch">
+            <div class="card mb-4 rounded-3 shadow-sm border-warning">
+              <div
+                class="card-header py-3 text-white bg-warning border-warning"
+              >
+                <h4 class="my-0 fw-normal">Modelled XML</h4>
+              </div>
+              <div class="card-body">
+                The table created will feature 2 additional columns Parent UID
+                and Object UID which allows you to build recursive queries over
+                the entire XML.
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <footer class="mt-auto text-white-50">
-        <p>Made with ♥️. Contribute to this project</p>
-      </footer>
+        <div style="margin-top: 2rem">
+          <h2 class="display-6 text-center mb-4">
+            Yes, this is a simple XML file
+          </h2>
+        </div>
+      </main>
     </div>
   </body>
 </html>
