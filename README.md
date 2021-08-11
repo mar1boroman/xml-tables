@@ -3,7 +3,7 @@
 
 ## Firefox Users
 
-XML Tables is just a stylesheet mixed with bootstrap and a bit of vanilla js, which can be added to any XML document to turn it into a queryable dataset.
+XML Tables is a stylesheet mixed with bootstrap and a bit of vanilla js, which can be added to any XML document to turn it into a queryable dataset.
 For Firefox users, this is as simple as adding a `<style/>` tag to the XML document and opening the file in Firefox browser.
 
 Firefox, unlike other browsers, allows the local XML document on your desktop to use XML stylesheet hosted here or even on your local desktop
@@ -15,7 +15,7 @@ Firefox, unlike other browsers, allows the local XML document on your desktop to
 This tag is added after the XML version declaration 
   <?xml version="1.0"?>
   
-Refer
+Here is an [example](https://raw.githubusercontent.com/mar1boroman/mar1boroman.github.io/main/books.xml)
 
 ## Other browsers
 
@@ -27,12 +27,13 @@ Hence, we transform the XML first & then open the html table generated in any br
 ### Step 1 : Download [Saxon-HE](https://www.saxonica.com/html/products/products.html)
 
 This is a great free open source jar which allows you to perform basic XSLT transformations on your local machine through command line.
-On UNIX systems, this works similar to ``xsltproc`` (which you can use if you work on linux based environment)
 
 [SourceForge](https://sourceforge.net/projects/saxon/files/) download link 
 (Please refer the [Saxonica](https://www.saxonica.com/html/products/products.html) home page for latest release)
 
-**Copy saxon-he-*version*.jar file to a suitable location**
+On Linux systems, you can achieve this using``xsltproc``
+
+**Copy saxon-he-*version*.jar file to a suitable location** 
 
 ### Step 2 : Transform your XML document into HTML
 
