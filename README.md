@@ -1,6 +1,3 @@
----
----
-
 # XML Tables Usage
 
 ## Firefox Users
