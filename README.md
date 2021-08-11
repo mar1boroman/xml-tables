@@ -10,10 +10,11 @@ Firefox, unlike other browsers, allows the local XML document on your desktop to
 
 ### Step 1 : Add this stylesheet tag to your XML document
 
-  <?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/mar1boroman/mar1boroman.github.io/main/xml-table.xsl"?>
+    <?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/mar1boroman/mar1boroman.github.io/main/xml-table.xsl"?>
 
 This tag is added after the XML version declaration 
-  <?xml version="1.0"?>
+
+    <?xml version="1.0"?>
   
 Here is an [example](https://raw.githubusercontent.com/mar1boroman/mar1boroman.github.io/main/books.xml)
 
