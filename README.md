@@ -1,5 +1,8 @@
 # XML Tables Usage
 
+## Newer Versions of the stylesheet are available in the main repo
+https://github.com/mar1boroman/mar1boroman.github.io
+
 ## Firefox Users
 
 XML Tables is a stylesheet mixed with bootstrap and a bit of vanilla js, which can be added to any XML document to turn it into a queryable dataset.
