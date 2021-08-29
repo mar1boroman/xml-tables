@@ -8,16 +8,13 @@ For Firefox users, this is as simple as adding a `<style/>` tag to the XML docum
 Firefox, unlike other browsers, allows the local XML document on your desktop to use XML stylesheet hosted here or even on your local desktop
 
 ### Step 1 : Add this stylesheet tag to your XML document
-
-    <?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/mar1boroman/mar1boroman.github.io/main/xsl/xml-tables.xsl"?>
-
-OR
-
-    <?xml-stylesheet type="text/xsl" href="https://tinyurl.com/tablexml"?>
+```
+    <?xml-stylesheet type = "text/xsl" href = "https://cdn.jsdelivr.net/gh/mar1boroman/xml-tables@latest/xsl/xml-tables.xsl"?>
+```
 
 This tag is added after the XML version declaration
 
-    <?xml version="1.0"?>
+    `<?xml version="1.0"?>`
 
 Here is an [example](https://raw.githubusercontent.com/mar1boroman/mar1boroman.github.io/main/books.xml)
 
@@ -42,10 +39,11 @@ On Linux systems, you can achieve this using`xsltproc`
 ### Step 2 : Transform your XML document into HTML
 
 Open the command prompt (Windows) or Terminal(Mac) and use the below command
-
+```
     java
     -jar <Saxon-Jar-Location>/saxon-he-10.5.jar
-    -s:MyFile.XML -xsl:"https://raw.githubusercontent.com/mar1boroman/mar1boroman.github.io/main/xsl/xml-tables.xsl"
+    -s:MyFile.XML -xsl:"https://cdn.jsdelivr.net/gh/mar1boroman/xml-tables@latest/xsl/xml-tables.xsl"
     -o:MyOutput.html
-
+```
 Open the generated `MyOutput.html` file in any browser available to you.
+
