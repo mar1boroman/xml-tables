@@ -1,0 +1,72 @@
+#navigation-bar nav {
+  background-color: #cacfd6 !important;
+  height: 60px;
+}
+
+table {
+  margin-top: 35px;
+}
+
+table thead th {
+  text-align: center;
+  background-color: #bf1363 !important;
+}
+
+#search-input:hover {
+  width: 500px;
+  transition: 0.4s;
+}
+
+#search-input {
+  width: 200px;
+  height: 40px;
+  transition: 0.4s;
+}
+
+#btn-export-json {
+  background-color: #070715 !important;
+  transition: 0.4s;
+  border: none !important;
+}
+
+#btn-export-json:hover {
+  background-color: #3c1579 !important;
+  transition: 0.4s;
+}
+
+#btn-export-csv {
+  background-color: #bf1363 !important;
+  transition: 0.4s;
+  border: none !important;
+}
+
+#btn-export-csv:hover {
+  background-color: #820d43 !important;
+  transition: 0.4s;
+}
+
+td {
+  word-wrap: break-word;
+  min-width: 160px;
+  max-width: 160px;
+}
+
+#xml-graph {
+  position: absolute;
+  background-color: #070715;
+  padding: 20px;
+}
+
+#infocard {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  font-size: 11px;
+  background-color: rgba(7, 7, 21, 0.2);
+  color: white;
+}
+
+#infocard .list-group-item {
+  background-color: rgba(7, 7, 21, 0.2);
+  color: white;
+}
