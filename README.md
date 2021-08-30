@@ -5,14 +5,14 @@
 XML Tables is aimed at converting any XML file on your desktop into a Single Page Application, by just adding a single style tag to your XML file.
 Internally the XML file uses
 
-* XSLT to convert your XML file into a HTML table
-* Bootstrap to add styling to HTML elements
-* Javascript
-  * Add Searchability using JQuery
-  * Add Export Options using JQuery
-  * Visualizations
-    * 2D Visualization - [D3 Library](https://d3js.org)
-    * 3D Visualization - [vasturiano's 3d-force-graph library](https://github.com/vasturiano/3d-force-graph)
+- XSLT to convert your XML file into a HTML table
+- Bootstrap to add styling to HTML elements
+- Javascript
+  - Add Searchability using JQuery
+  - Add Export Options using JQuery
+  - Visualizations
+    - 2D Visualization - [D3 Library](https://d3js.org)
+    - 3D Visualization - [vasturiano's 3d-force-graph library](https://github.com/vasturiano/3d-force-graph)
 
 The goal of this project is to help data engineers and data scientist to quickly analyze local XML files without the need to install any additional software (if you have Firefox browser, else you would need to download [Saxon-HE](https://www.saxonica.com/html/products/products.html)
 
@@ -32,7 +32,7 @@ This tag is added after the XML version declaration
 
 `<?xml version="1.0"?>`
 
-Here is an [example](https://raw.githubusercontent.com/mar1boroman/mar1boroman.github.io/main/books.xml)
+Here is an [example](https://raw.githubusercontent.com/mar1boroman/mar1boroman.github.io/main/demo/books.xml)
 
 ## Other browsers
 
