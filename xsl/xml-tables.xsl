@@ -11,7 +11,7 @@
                 <title>XML Table</title>
                 <!-- Meta tags -->
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mar1boroman/xml-tables@latest/css/xml-tables.css" crossorigin="anonymous"/>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mar1boroman/mar1boroman.github.io@latest/css/xml-tables.css" crossorigin="anonymous"/>
             </head>
             <body>
 
@@ -45,7 +45,7 @@
 
                                 <!-- Visualization Link End-->
 
-                                <form class="d-flex ">
+                                <form class="d-flex nav navbar-nav">
 
                                     <input id="search-input" class="form-control me-2" type="search" placeholder="Search"/>
 
@@ -110,7 +110,7 @@
                 <!-- Including custome JS & CSS code -->
                 <script type="module" src="https://cdn.jsdelivr.net/npm/3d-force-graph@1.70.5/dist/3d-force-graph.min.js"></script>
                 <!-- Including custome JS & CSS code -->
-                <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mar1boroman/xml-tables@latest/js/xml-tables.js" crossorigin="anonymous"></script>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mar1boroman/mar1boroman.github.io@latest/js/xml-tables.js" crossorigin="anonymous"></script>
                 <script type="module" src="https://cdn.jsdelivr.net/npm/3d-force-graph@1.70.5/dist/3d-force-graph.min.js"></script>
 
 
